@@ -19,10 +19,10 @@ class Atmospheric():
     """
     rounds a date of to the closest 'x' hours
     """
-    y = date.get('year')
-    m = date.get('month')
-    d = date.get('day')
-    H = date.get('hour')
+    y = date.year
+    m = date.month
+    d = date.day
+    H = date.hour
     HH = H.divide(xhour).round().multiply(xhour)
     return date.fromYMD(y,m,d).advance(HH,'hour')
   
