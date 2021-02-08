@@ -31,7 +31,7 @@ class Atmospheric():
     round date to closest month
     """
     # start of THIS month
-    m1 = date.fromYMD(date.get('year'),date.get('month'),ee.Number(1))
+    m1 = date.fromYMD(date.year,date.month,ee.Number(1))
     
     # start of NEXT month
     m2 = m1.advance(1,'month')
